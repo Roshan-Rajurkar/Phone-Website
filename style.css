@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #77bdf5);
+    ;
+}
+
+nav {
+    width: 90%;
+    position: sticky;
+    margin: 10px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 10%;
+}
+
+.logo img {
+    width: 150%;
+    cursor: pointer;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-links ul li a {
+    color: #fff;
+    font-size: 3vh;
+    text-decoration: none;
+}
+
+.nav-links ul li #search {
+    padding: 5px 10px;
+    border: none;
+    color: rgb(79, 79, 149);
+    box-shadow: 8px 8px 8px -3px black;
+    opacity: .9;
+}
+
+.information {
+    width: 700px;
+    height: 700px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left:-10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img{
+    width: 50px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: white;
+}
+.feature div{
+    margin-left: 30px;
+}
+
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 300px;
+    right: 20px;
+}
+
+.two{
+    top: 50px;
+    left: 200px;
+    transform: rotate(-90deg);
+}
+
+.three{
+    bottom: 300px;
+    left: 20px;
+    transform: rotate(-180deg);
+}
+
+.four{
+    bottom: 70px;
+    right: 210px;
+    transform: rotate(-270deg);
+}
+
+.mobile{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+}
+
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+    filter: drop-shadow(0.1px 3px rgb(0, 0, 0));
+}
+
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    filter: drop-shadow(0.1px 3px rgb(0, 0, 0));
+}
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 350px solid #fff;
+    border-right: 350px solid transparent;
+    border-bottom: 350px solid white;
+    border-left: 350px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
